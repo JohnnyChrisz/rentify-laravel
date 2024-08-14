@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Role;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Roles;
+use Inertia\Inertia;
 
 class RolesController extends Controller
 {
+
     public function create(Request $request)
     {
         $request->validate([

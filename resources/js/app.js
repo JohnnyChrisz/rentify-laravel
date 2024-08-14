@@ -23,7 +23,9 @@ import Toast from 'primevue/toast';
 import ToastService from 'primevue/toastservice';
 import Dialog from 'primevue/dialog';
 import FileUpload from 'primevue/fileupload';
-
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import 'primeicons/primeicons.css'
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
@@ -42,6 +44,8 @@ createInertiaApp({
                 },
             })
             .use(ToastService)
+            .component('DataTable', DataTable)
+            .component('Column', Column)
             .component('Button' , Button)
             .component('SpeedDial' , SpeedDial)
             .component('SplitButton' , SplitButton)
